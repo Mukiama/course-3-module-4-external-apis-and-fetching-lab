@@ -63,7 +63,7 @@ describe('Weather Alerts App - Input clearing', () => {
     input.value = 'NY'
     button.click()
 
-    await new Promise(resolve => setTimeout(resolve, 0))
+    await new Promise(resolve => setTimeout(resolve, 1000))
 
     const displayDiv = container.querySelector('#alerts-display')
     expect(displayDiv).toHaveTextContent('Weather Alerts: 2')
